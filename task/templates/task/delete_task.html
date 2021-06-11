@@ -1,0 +1,10 @@
+<p> delete "{{task}}" forever? </p>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="yes delete it">
+</form>
+<a href="{% url 'home' %}"> NO </a>
+
+
+
